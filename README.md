@@ -65,7 +65,7 @@ So there you have it!
 As I stated above (and in my blog post), Babylon's .bgl format is well known and there are other projects which parse it. Some were suggested by commentators of the post directly and some by email.
 Here are a few, which may come-in handy for anyone who'd like to contribute to this project and its known issues listed above:
 
-* Forum thread: [BGL (babylon glossary) to GLS (babylon glossary source)](http://www.woodmann.com/forum/showthread.php?7028-BGL-(babylon-glossary)-to-GLS-(babylon-glossary-source)&p=44981&viewfull=1#post44981 "BGL (babylon glossary) to GLS (babylon glossary source)")
+* Forum thread: [BGL (babylon glossary) to GLS (babylon glossary source)](http://www.woodmann.com/forum/showthread.php?7028#post44981 "BGL (babylon glossary) to GLS (babylon glossary source)")
  
 * [BGL-Reverse](https://github.com/mgreen/bgl-reverse "BGL-Reverse") -  another open-source reverse engineered BGL parser.
 
