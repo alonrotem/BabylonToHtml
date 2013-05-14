@@ -66,20 +66,22 @@ namespace BabylonToHtml.BabylonReader
                 s.Seek(gzipHeaderPos, SeekOrigin.Begin);
                 parseMetaData(new GZipInputStream(s));
 
-                if (string.IsNullOrWhiteSpace(this.SrcEnc))
+                if (null == this.SrcEncoding && string.IsNullOrWhiteSpace(this.SrcEnc))
                 {
                     throw new InvalidDataException("Failed to detect source encoding in BGL file. Please provide encoding via proper constructor.");
                 }
-                else
+                else if (null == this.SrcEncoding)
                 {
+                    // if SrcEncoding not set at command line
                     this.SrcEncoding = Encoding.GetEncoding(this.SrcEnc);
                 }
-                if (string.IsNullOrWhiteSpace(this.DstEnc))
+                if (null == this.DstEncoding && string.IsNullOrWhiteSpace(this.DstEnc))
                 {
                     throw new InvalidDataException("Failed to detect destination encoding in BGL file. Please provide encoding via proper constructor.");
                 }
-                else
+                else if (null == this.DstEncoding)
                 {
+                    // if DstEncoding not set at command line
                     this.DstEncoding = Encoding.GetEncoding(this.DstEnc);
                 }
 
