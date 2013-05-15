@@ -116,14 +116,7 @@ namespace BabylonToHtml
                 Console.Write("Processing input...\n\n");
 
                 BabylonBglParser parser;
-                if ((sourceEnc != null) && (targetEnc != null))
-                {
-                    parser = new BabylonBglParser(sourceEnc, targetEnc);
-                }
-                else
-                {
-                    parser = new BabylonBglParser();
-                }
+                parser = new BabylonBglParser(sourceEnc, targetEnc);
                 XDict dict = parser.Parse(fileName);
 
                 WriteKeyValue("Dictionary title", parser.Title);
