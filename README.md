@@ -69,4 +69,4 @@ Here are a few, which may come-in handy for anyone who'd like to contribute to t
  
 * [BGL-Reverse](https://github.com/mgreen/bgl-reverse "BGL-Reverse") -  another open-source reverse engineered BGL parser.
 
-* [PyGlossary](http://sourceforge.net/projects/pyglossary/ "PyGlossary") - yet another open-source reverse engineered BGL parser, this time in Python.
+* [PyGlossary](https://github.com/ilius/pyglossary "PyGlossary") - yet another open-source reverse engineered BGL parser, this time in Python.
