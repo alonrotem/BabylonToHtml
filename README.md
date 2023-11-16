@@ -1,8 +1,8 @@
-#BabylonToHtml#
+# BabylonToHtml#
 
 This is tool for converting Babylon .bgl dictionaries to structured HTML, for creation of a Kindle-compatible dictionaries.
 
-##The Idea in Brief##
+## The Idea in Brief
 BabylonToHtml takes a Babylon .bgl file (which can be downloaded freely from [Babylon's free content section](http://www.babylon.com/free-dictionaries/ "Free Glossaries"), and converts it to a well-structured HTML.
 
 The produced HTML can be used with [MobiPocket Creator](http://www.mobipocket.com/en/downloadsoft/productdetailscreator.asp "MobiPocket Creator") to create a .prc formatted eBook, which can be used natively as a dictionary on Kindle devices.
@@ -10,7 +10,7 @@ The produced HTML can be used with [MobiPocket Creator](http://www.mobipocket.co
 
 See my blog post [Using Babylon-based dictionaries on your Kindle](http://www.alonintheworld.com/2012/06/using-babylon-based-dictionaries-on.html "AlonInTheWorld.com") for additional information about this tool's purpose.
 
-##About the Structure of the BabylonToHtml Tool##
+## About the Structure of the BabylonToHtml Tool
 The binary structure of .BGL files has already been cracked (not by me). This knowledge is commonly out in the open and shared across various open-source projects. I have combined a few of those resources into one easy-to-use command-line utility.
 
 + One source was [dictconv](http://freecode.com/projects/dictconv "dictconv"), a dictionary conversion tool for Linux which comes with its full C++ source. I used parts of this code (ported by me into C#) in order to analyse the meta-data of the dictionary file (text encoding, author etc).
@@ -22,12 +22,12 @@ The binary structure of .BGL files has already been cracked (not by me). This kn
 
 + To all the above I added my very own simple HTML generator. It structures the entries from the dictionary file in a markup compatible with the next step (converting it into an eBook).
 
-##Basic Usage##
+## Basic Usage
 
 BabylonToHtml tool runs in a command prompt window. Running it without any additional parameters, you'll receive some basic help:<br/>
 ![Runtime help](http://2.bp.blogspot.com/-sgs1NUKZIE8/T-tjX-dCcpI/AAAAAAAAOWc/wN9Z-szk2-U/s1600/BabylonToHtmlHelp.png "A handy message for the perplexed user..")
 
-###Command line parameters:###
+### Command line parameters:
 + In most cases all you have to provide is the name (and potentially the path) of your .BGL file. 
 + The output .HTML is encoded in UTF-8 (Unicode).
 However, the entries read from the .BGL dictionary are encoded with specific character sets (and sometimes with more than one).For example: in a Chinese - Bulgarian dictionary the source language entries are encoded with Chinese characters and the target language entries are encoded in Cyrillic. 
@@ -48,7 +48,7 @@ The new file's name matches the original .BGL file (just with .HTML extension):<
 
 ##Why is this project on GitHub?##
 
-###Known issues###
+### Known issues
 My blog-post presenting this project, "[Using Babylon-based dictionaries on your Kindle](http://www.alonintheworld.com/2012/06/using-babylon-based-dictionaries-on.html "AlonInTheWorld.com")", got a lot of attention. It seems many people liked the idea of importing Babylon dictionaries to Kindle. Many people asked about an option to produce an English-to-Hebrew dictionary, but not just.
 
 The outputs of this project at runtime, the HTML (and then the .prc file), are not perfect. There are a few key problems which need to be adderssed:
@@ -61,7 +61,7 @@ The outputs of this project at runtime, the HTML (and then the .prc file), are n
 Having not much time to address these issues, I've come to a decision to open this project to the public, for whoever wants and can improve it. <br/>
 So there you have it!
 
-###Additional resources for contributors###
+### Additional resources for contributors
 As I stated above (and in my blog post), Babylon's .bgl format is well known and there are other projects which parse it. Some were suggested by commentators of the post directly and some by email.
 Here are a few, which may come-in handy for anyone who'd like to contribute to this project and its known issues listed above:
 
